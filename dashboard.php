@@ -23,12 +23,12 @@ $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql= "SELECT * FROM updates_table ";
+$sql= "SELECT * FROM updates_table";
  $result = $conn->query($sql);
  if($result->num_rows > 0) {
      while($row = $result->fetch_assoc())
      {
-         echo "" . $row["name"]." ".":: ". $row["message"]." -" .$row["datetime"]. "<br>";
+         echo "" . $row["name"]. " " .":: " . $row["message"]." -" .$row["datetime"]. "<br>";
          echo "<br>";
      }
  }

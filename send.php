@@ -11,7 +11,7 @@ if ($conn->connect_error) {
 $message = $_POST['message'];
 $name = $_SESSION['name'];
 
-$sql="INSERT INTO Updates_table(name, message) values('$name', '$message')";
+$sql="INSERT INTO Updates_table(name, message) values('$username', '$message')";
 $result=$conn->query($sql);
 
 

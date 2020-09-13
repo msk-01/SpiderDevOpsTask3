@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login </title>
+    <title>Login </title>
+    <style>
+        .error {color: #FF0000;}
+        </style>
 </head>
 <body>
 <div id="main">
  <div id="info">
 	<h2>Login here to chat</h2>
 	<form method="post" action="login.php">  
-	  Username: <input type="text" name="username" placeholder:"Username">
+      Username: <input type="text" name="username" placeholder:"Username">
 	  <br><br>
-	  Password: <input type="text" name="password" placeholder:"Password">
+      Password: <input type="text" name="password" placeholder:"Password">
   <br><br>
  <button style="background-color: #6495ed;
                 color: white;" type="submit" name="submit"><b>Login</b></button>
+
+<div class="field-group">
+    <div><input type="checkbox" name="remember" id="remember"/>
+    <label for="remember-me">Remember me</label>
+</div>
+
+
+
+
 </form>
 </div>
-<ul><li><a href="register.html">Click this if you don't have an account</a></li></ul>
+<ul>
+    <li><a href="register.html">Click this if you don't have an account</a></li>
+    <li><p>Only letters are allowed in username, no whitespace or special characters</p></li>
+    <li><p>Password should be atleast 1 number and a character and must be atleast 8 characters long, no special characters or whitespaces</p></li>
+</ul>
 
 </div>
 </body>

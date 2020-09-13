@@ -8,15 +8,19 @@
  <div id="info">
 	<h2>Registration Form </h2>
 	<form method="post" action="register.php">  
-	  Username: <input type="text" name="username" placeholder:"Username">
-	  <br><br>
-	  Password: <input type="text" name="password" placeholder:"Password">
-  <br><br>
+        Username: <input type="text" name="username" placeholder:"Username">
+        <br><br>
+        Password: <input type="text" name="password" placeholder:"Password">
+    <br><br>
  <button style="background-color: #6495ed;
                 color: white;" type="submit" name="submit"><b>Register here!!</b></button>
 </form>
 </div>
-<ul><li><a href="login.html">Login here</a></li></ul>
+<ul>
+    <li><a href="login.html">Login here</a></li>
+    <li><p>Only letters are allowed in username, no whitespace or special characters</p></li>
+    <li><p>Password should be atleast 1 number and a character and must be atleast 8 characters long, no special characters or whitespaces</p></li>
+</ul>
 
 </div>
 </body>
